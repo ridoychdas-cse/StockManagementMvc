@@ -1,0 +1,14 @@
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.Repository1.dll.config
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.Repository1.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.Repository1.pdb
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\EntityFramework.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\EntityFramework.SqlServer.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.DatabaseContext.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.Models.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.DatabaseContext.pdb
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\StockManagement.Models.pdb
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\EntityFramework.xml
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\bin\Debug\EntityFramework.SqlServer.xml
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\obj\Debug\StockManagement.Repository1.dll
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\obj\Debug\StockManagement.Repository1.pdb
+D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Repository1\obj\Debug\StockManagement.Repository1.csprojResolveAssemblyReference.cache
