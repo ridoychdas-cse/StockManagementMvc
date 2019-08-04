@@ -12,66 +12,103 @@ namespace StockManagement.Controllers
     {
         // GET: Category
         CategoryBll _categoryBll=new CategoryBll();
-        public string Save(Category category)
+
+        [HttpGet]
+        public ActionResult Save()
         {
-            string Output = "";
-           Category _category=new Category();
-           _category.Code = category.Code;
-           _category.Name = category.Name;
-           _category.AddBy = category.AddBy;
-           _category.AddDate=DateTime.Now;
-           bool IsExist = _categoryBll.IsExist(category);
-           if (!IsExist)
-           {
-               bool success = _categoryBll.Save(_category);
-
-               if (success)
-               {
-                   Output= "Success";
-               }
-               else
-               {
-                   Output= "Fail";
-               }
-           }
-           else
-           {
-               Output = "Same Name Alreay Save";
-           }
-
-           return Output;
+            return View();
         }
 
-        public string Update(Category category)
+
+
+
+        [HttpPost]
+        public ActionResult Save(Category category)
         {
 
-            string Output = "";
-            Category _category = new Category();
-            _category.Id = Convert.ToInt32(category.Id);
-            _category.Code = category.Code;
-            _category.Name = category.Name;
-            _category.AddBy = category.AddBy;
-            _category.AddDate = DateTime.Now;
-            bool IsExist = _categoryBll.UpdateIsExist(category);
-            if (!IsExist)
-            {
-                bool success = _categoryBll.Update(_category);
 
-                if (success)
+            if (ModelState.IsValid)
+            {
+                category.AddDate = DateTime.Now;
+                bool IsExist = _categoryBll.IsExist(category);
+                if (!IsExist)
                 {
-                    Output = "Success";
+                    bool success = _categoryBll.Save(category);
+
+                    if (success)
+                    {
+                        ViewBag.Success = "Success";
+                    }
+                    else
+                    {
+                        ViewBag.Fail = "Fail";
+                    }
                 }
                 else
                 {
-                    Output = "Fail";
+                    ViewBag.AlreadySave = "Same Name Alreay Save";
                 }
+
+
             }
             else
             {
-                Output = "Same Name Alreay Save";
+                ViewBag.Error = "Error";
             }
+            return View();
+        }
+        [HttpGet]
 
-            return Output;
+        public ActionResult Update(int Id)
+        {
+            Category category=new Category();
+            category.Id = Id;
+            Category data = _categoryBll.GetById(category);
+            return View(data);
+
+        }
+        [HttpPost]
+        public ActionResult Update(Category category)
+        {
+
+            if (ModelState.IsValid)
+            {
+                category.AddDate = DateTime.Now;
+                bool IsExist = _categoryBll.UpdateIsExist(category);
+                if (!IsExist)
+                {
+                    bool success = _categoryBll.Update(category);
+
+                    if (success)
+                    {
+                        ViewBag.Success = "Success";
+                    }
+                    else
+                    {
+                        ViewBag.Fail = "Fail";
+                    }
+                }
+                else
+                {
+                    ViewBag.AlreadySave = "Same Name Alreay Save";
+                }
+
+
+            }
+            else
+            {
+                ViewBag.Error = "Error";
+            }
+            return View(category);
+        }
+
+        [HttpGet]
+        public ActionResult GetAll()
+        {
+            List<Category> categorieList = _categoryBll.GetAll();
+            Category category=new Category();
+            category.Categories = categorieList;
+            return View(category);
         }
      
     }

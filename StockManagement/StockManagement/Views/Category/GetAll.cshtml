@@ -1,0 +1,70 @@
+﻿@model StockManagement.Models.Models.Category
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetAll</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="Name" value="@Model.Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Code</td>
+                <td>
+                    <input type="text" name="Code" value="@Model.Code" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Search" />
+
+                </td>
+            </tr>
+        </table>
+      
+    </form>
+</div>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <td>Sl</td>
+            <td>Name</td>
+            <td>Code</td>
+        </tr>
+        </thead>
+        <tbody>
+        @{ int Sl = 1;}
+        @foreach (var row in @Model.Categories)
+        {
+            <tr>
+                <td>@(Sl++)</td>
+                <td>@row.Name</td>
+                <td>@row.Code</td>
+            </tr>
+
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

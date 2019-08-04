@@ -40,6 +40,18 @@ namespace StockManagement.Repository1.Repo
             }
         }
 
+        public List<Category> GetAll()
+        {
+            var data = Db.Categories.ToList();
+            return data;
+        }
+
+        public Category GetById(Category category)
+        {
+            var data = Db.Categories.FirstOrDefault(c => c.Id == category.Id);
+            return data;
+        }
+
         public bool IsExist(Category category)
         {
             var Data = Db.Categories.FirstOrDefault(c => c.Code == category.Code && c.Name == category.Name);

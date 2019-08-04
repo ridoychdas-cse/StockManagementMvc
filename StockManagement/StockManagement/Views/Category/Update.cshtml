@@ -1,0 +1,65 @@
+﻿@model StockManagement.Models.Models.Category
+@if (ViewBag.Success != null)
+{
+    <h1> Save Success</h1>
+}
+else if (ViewBag.Fail != null)
+{
+    <h1>Fail</h1>
+}
+else if (ViewBag.Error != null)
+{
+    <h1>Erorr</h1>
+}
+else if (ViewBag.AlreadySave != null)
+{
+    <h1> Already Save</h1>
+}
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <div>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" name="Name" value="@Model.Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Code</td>
+                    <td>
+                        <input type="text" name="Code" value="@Model.Code" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Update" />
+                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>
+

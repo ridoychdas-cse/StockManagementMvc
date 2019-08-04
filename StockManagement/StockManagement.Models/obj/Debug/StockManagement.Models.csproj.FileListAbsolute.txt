@@ -20,3 +20,15 @@ D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Models
 D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.dll
 D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.pdb
 D:\AllDocumentsRCD\StockManagementMVC\Old\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.csprojResolveAssemblyReference.cache
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\StockManagement.Models.dll.config
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\StockManagement.Models.dll
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\StockManagement.Models.pdb
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\EntityFramework.dll
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\EntityFramework.xml
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.csprojAssemblyReference.cache
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.csproj.CoreCompileInputs.cache
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.csproj.CopyComplete
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.dll
+D:\AllDocumentsRCD\StockManagementMVC\StockManagementMvc\StockManagement\StockManagement.Models\obj\Debug\StockManagement.Models.pdb

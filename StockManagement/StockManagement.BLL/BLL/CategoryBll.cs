@@ -31,5 +31,15 @@ namespace StockManagement.BLL.BLL
       {
           return _categoryRepository.Updaete(category);
       }
+
+        public Category GetById(Category category)
+        {
+            return _categoryRepository.GetById(category);
+        }
+
+        public List<Category> GetAll()
+        {
+            return _categoryRepository.GetAll();
+        }
     }
 }

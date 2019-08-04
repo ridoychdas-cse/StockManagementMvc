@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\CategoryRepository.cs" />
+    <Compile Include="Repo\CustomerRepo.cs" />
+    <Compile Include="Repo\ProductRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StockManagement.DatabaseContext\StockManagement.DatabaseContext.csproj">
